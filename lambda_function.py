@@ -78,7 +78,6 @@ def create_message(file_dict):
             msg.attach(payload)
 
     subject = mail_object['Subject']
-    sender = os.environ['MailSender']
     recipient = os.environ['MailRecipient']
     sender = generate_sender_address(from_list, to_address.replace(' ', '_'))
     # Add subject, from and to lines.
